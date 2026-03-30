@@ -1,0 +1,35 @@
+:root {
+    --bg-color: #fdfbf7;
+    --text-primary: #3e2723;
+    --accent: #d4a373;
+    --card-bg: #fff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Open Sans', sans-serif; background-color: var(--bg-color); color: var(--text-primary); }
+h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
+
+nav { display: flex; justify-content: space-between; padding: 2rem 5%; align-items: center; position: absolute; width: 100%; z-index: 10; color: #fff; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); }
+.logo { font-size: 2rem; font-weight: 700; }
+.links a { color: #fff; text-decoration: none; margin-left: 2rem; font-weight: 600; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px;}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(62, 39, 35, 0.4), rgba(62, 39, 35, 0.6)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2672&auto=format&fit=crop');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: #fff;
+}
+.header-content h1 { font-size: 4.5rem; margin-bottom: 1rem; }
+.header-content p { font-size: 1.2rem; margin-bottom: 2rem; font-weight: 300; }
+.btn { padding: 1rem 2.5rem; background: var(--accent); color: #fff; text-decoration: none; border-radius: 30px; font-weight: 600; letter-spacing: 1px; transition: 0.3s; }
+.btn:hover { background: #b0875b; }
+
+section { padding: 5rem 5%; text-align: center; }
+section h2 { font-size: 2.5rem; margin-bottom: 3rem; color: var(--accent); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.card { background: var(--card-bg); padding: 3rem 2rem; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; border-bottom: 4px solid transparent; }
+.card:hover { transform: translateY(-10px); border-bottom-color: var(--accent); }
+.card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+.card p { margin-bottom: 1.5rem; color: #666; line-height: 1.6; }
+.card span { font-weight: 700; color: var(--accent); font-size: 1.2rem; }
+
+footer { padding: 3rem; text-align: center; background: #3e2723; color: #d4a373; font-size: 0.9rem; }
